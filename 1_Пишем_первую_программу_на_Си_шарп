@@ -1,0 +1,12 @@
+using System;
+
+namespace _1_Пишем_первую_программу_на_Си_шарп
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
