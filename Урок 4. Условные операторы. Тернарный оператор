@@ -15,7 +15,7 @@ namespace kratnos
             Console.WriteLine("Insert a:");
             a = Convert.ToInt32(Console.ReadLine());
             {
-                int b; // b=KRATNO3
+                int b; // b=KRATNO3=true
                 int c; // c=KRATNO7             
 
                 //kratnost 3 (1/0)
@@ -26,22 +26,24 @@ namespace kratnos
                 if (a % 7 == 0) c = 1;
                 else c = 0;
 
-                // vivod nekratnosti
-                if ((b + c) == 0) Console.WriteLine("Nekratno3i7");
+                if ((b + c) == 2) Console.WriteLine("Kratno 3 i 7");
                 else
-                {
-                    // vivod kratnosti
-                    if ((b + c) == 2) Console.WriteLine("Kratno3i7");
-                    else
-                    {                      
-                        //vivod chastnostei 
-                        if (b == 1 || c == 0) Console.WriteLine("kratno3");
-                        else
-                        if (b == 0 || c == 1) Console.WriteLine("kratno7");                      
+                if ((b + c) == 0) Console.WriteLine("Ne kratno 3 i 7");
+                else
+                if (b == 1 && c == 0) Console.WriteLine("Kratno 3 no ne kratno 7");
+                else
+                if (b == 0 && c == 1) Console.WriteLine("Kratno 7 no ne kratno 3");
 
-                        
-                    }
+                {
+                    bool e;
+                    if (b == 1) e = true;
+                    else e = false;
                 }
+                { bool d;
+                    if (c == 1) d = true;
+                    else d = false;
+                }
+
             }
         }
     }
