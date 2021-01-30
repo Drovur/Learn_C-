@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace kratnos
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {        
+            decimal a,c,d; //chislo      
+            Console.WriteLine("Введите число:");
+            a = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("Первый делитель:");
+            c = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("Второй делитель:");
+            d = Convert.ToDecimal(Console.ReadLine());
+
+            Console.Write("Число " + a);                           
+                    
+            bool kratnoc;
+            kratnoc = (a % c == 0);
+            bool kratnod;
+            kratnod = (a % d == 0);
+
+            if (kratnoc == true && kratnod == true) Console.Write(" делится на "+c+" и "+d);
+            if (kratnoc == false && kratnod == false) Console.Write(" не делится на "+c+" и "+d);
+            if (kratnoc == true && kratnod == false) Console.Write(" делится на " + c);
+            if (kratnoc == false && kratnod == true) Console.Write(" делится на " + d);
+            
+        } 
+       
+    }
+    
+}
