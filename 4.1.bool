@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace kratnos
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a; //chislo           
+
+            Console.WriteLine("Insert a:");
+            a = Convert.ToInt32(Console.ReadLine());
+            {
+                bool b; 
+                bool c;            
+
+                //kratnost 3 (1/0)
+                if (a % 3 == 0) b = true;
+                else b = false;
+
+                // kratnost 7 (1/0)  
+                if (a % 7 == 0) c = true;
+                else c = false;
+
+                // b=KRATNO3
+                // c=KRATNO7                  
+
+                if (b == true && c == true) Console.WriteLine("Kratno 3 i 7");                
+                if (b == true && c == false) Console.WriteLine("Kratno 3");
+                if (b == false && c == true) Console.WriteLine("kratno 7");
+                if (b == false && c == false) Console.WriteLine("Ne kratno");
+            }
+        }
+    }
+}
